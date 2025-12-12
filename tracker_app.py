@@ -42,7 +42,7 @@ def run_tracking(video_path, methods):
     # --- User ROI selection using cv2.selectROI ---
     print("[INFO] A window called 'Select ROI' should appear.")
     print("       Use the mouse to drag a box around your object.")
-    print("       Then press ENTER or SPACE to confirm, or 'c' to cancel.")
+    print("       Then press ENTER or SPACE to confirm, or 'q' to quit.")
     init_bbox = cv2.selectROI("Select ROI", first_frame, fromCenter=False, showCrosshair=True)
     cv2.destroyWindow("Select ROI")  # close ROI window
 
